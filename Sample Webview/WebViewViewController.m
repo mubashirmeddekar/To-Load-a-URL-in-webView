@@ -13,11 +13,15 @@
 @end
 
 @implementation WebViewViewController
+@synthesize myWebView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
+    [myWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.apple.com"]]];
 }
 
 - (void)didReceiveMemoryWarning
